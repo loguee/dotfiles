@@ -11,10 +11,10 @@ Font Awesome (for workspace icons)
 
 gtk-arc (gtk theme)
 
-System San Francisco Display (font pack)pp
+System San Francisco Display (font pack)
 
 lxappearance (recommended but not required; makes theme/icon selection easier)
 
 Configuration application:
 
-Place the config and i3config files inside the ~/.config/i3 directory and restart i3
+Place the config and i3blocks files inside the ~/.config/i3 directory and restart i3

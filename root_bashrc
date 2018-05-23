@@ -1,0 +1,29 @@
+# ROOT BASHRC
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+# Custom prompt configuration
+# Use Wikipedia "256color_chart.svg" for color ID numbers
+PS1="\[$(tput bold)\]"			#Bold root
+PS1+="\[$(tput setaf 88)\]\u \w "	#Dark red all text 
+PS1+="\[$(tput sgr0)\]"			#Unset bold
+PS1+="\[$(tput blink)\]"		#Blink prompt arrows
+PS1+="\[$(tput setaf 226)\]!!! "	#Yellow  prompt arrows
+PS1+="\[$(tput sgr0)\]"			#Unset blink
+PS1+="\[$(tput setaf 172)\]"			#Orange commands
+
+# Tab-complete commands and filenames
+complete -cf
+#complete -f 
+
+# Ignore duplicate commands in history
+export HISTCONTROL=ignoredups
+#export HISTCONTROL=erasedups
+
+clear
+

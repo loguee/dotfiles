@@ -19,4 +19,6 @@ Configuration application:
 
 Place the config and i3blocks files inside the ~/.config/i3 directory and restart i3
 
-Place the .bash_profile and .bashrc files inside the ~ directory and restart bash
+Place the bash_profile and bashrc files inside the ~ directory and restart bash
+
+Place the root_bash_profile and root_bashrc files inside the /root directory and restart bash
